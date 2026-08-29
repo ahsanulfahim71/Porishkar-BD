@@ -381,6 +381,7 @@ export const deleteListing = async (req, res) => {
       );
     }
 
+    
     // Delete listing from MongoDB
     await Listing.findByIdAndDelete(req.params.id);
 

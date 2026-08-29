@@ -153,6 +153,13 @@ function MyOffers() {
                       ) : null)}
                   </div>
                 )}
+                <button
+                  onClick={() => handleDelete(listing._id)}
+                  className="inline-block px-5 py-2.5 bg-emerald-700 text-white font-semibold text-sm rounded-xl hover:bg-red-700 shadow-sm hover:shadow transition"
+                >
+                  Withdraw Bid
+                </button>
+
 
                 {bid.status === "Pending" && (
                   <p className="mt-4 text-amber-700 text-sm font-medium">
